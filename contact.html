@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="profile.css"/>
+     <style>
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2aa030;
+    }
+  </style>
+</head>
+    <body>
+        <!--NAVIGATION BAR START-->
+        <div class="container-navbar">
+            <H1>Contact</H1>
+            <ul class="ul-navbar">
+                <li class="li-navbar">
+                    <a href="index.html" class="a-navbar"> Beranda </a>
+                </li>
+                <li class="li-navbar">
+                    <a href="https://www.instagram.com/mugiy_/" class="a-navbar">Instagram</a>
+                </li>
+                <li class="li-navbar" class="a-navbar">
+                    <a href="https://web.facebook.com/mugi.yanto.520" class="a-navbar">Facebook</a>
+                </li>
+            </ul>
+        </div>
+        <!--NAVIGATION BAR FINISH-->
+        
+        <!--CONTENT START-->
+        <div class="container-content">
+            <ul class="ul-content">
+                <li class="li-content">
+                    Hubungi Kami
+                </li>
+                    <form action="contact.html" method="POST">
+                    <table>
+                    <tr>
+                        <td><label for="nama">Nama:</label></td>
+                        <td><input type="text" id="nama" name="nama" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="subjek">Subjek:</label></td>
+                        <td><input type="text" id="subjek" name="subjek"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pesan">Pesan:</label></td>
+                        <td><textarea id="pesan" name="pesan" rows="6" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit">Kirim</button></td>
+                    </tr>
+                    </table>
+                    </form>
+            </ul>
+            <ul class="ul-content">
+                <li class="li-content">
+                    Lokasi Kami
+                <a href="https://www.google.com/maps/place/Jl.+H.+Masnin+No.42,+RT.006%2FRW.004,+Cibodas,+Kec.+Cibodas,+Kota+Tangerang,+Banten+15138/@-6.2051398,106.6108485,18.96z/data=!4m6!3m5!1s0x2e69febf4f46ad67:0x2c9f4a22b52a0cb5!8m2!3d-6.2046377!4d106.6107797!16s%2Fg%2F11y3mvh63t?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D"> <img src="Image/map.png"></a>
+                </li>
+            </ul>
+        </div>
+        <!--CONTENT FINISH-->
+
+        <!--FOOTER START-->
+        <div>
+            <ul>
+                <li class="li-footer">
+                    <H3>&copy;KULINER TANGERANG</H3>
+                </li>
+            </ul>
+        </div>
+        <!--FOOTER FINISH-->
+    </body>
+</html>
