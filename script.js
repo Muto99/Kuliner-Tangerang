@@ -115,31 +115,3 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.transform = 'scale(1)';
         });
     });
-// Mobile Menu Toggle
-const mobileMenuBtn = document.createElement('div');
-mobileMenuBtn.className = 'mobile-menu-btn';
-mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-document.querySelector('.container-navbar').appendChild(mobileMenuBtn);
-
-mobileMenuBtn.addEventListener('click', function() {
-    const nav = document.querySelector('.ul-navbar');
-    nav.classList.toggle('show');
-});
-
-// Responsive adjustments
-function adjustLayout() {
-    const nav = document.querySelector('.ul-navbar');
-    if (window.innerWidth <= 768) {
-        if (!document.querySelector('.mobile-menu-btn')) {
-            // Kode di atas sudah membuat tombol mobile
-        }
-        nav.classList.add('mobile-nav');
-    } else {
-        nav.classList.remove('mobile-nav');
-        nav.classList.remove('show');
-    }
-}
-
-window.addEventListener('resize', adjustLayout);
-adjustLayout(); // Jalankan saat pertama kali load
-});
