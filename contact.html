@@ -105,7 +105,7 @@ document.getElementById('telegramForm').addEventListener('submit', function(e) {
   
   const botToken = '7398147580:AAETOkI5-OQLKxYbwK_68KMMSMilHFNBTrk'; // Ganti dengan token bot Anda
   const chatId = '5714616020'; // Ganti dengan chat ID Anda
-  const text = `Pesan Baru!\nNama: ${this.nama.value}\nEmail: ${this.email.value}\nPesan: ${this.pesan.value}`;
+  const text = `Pesan Baru!\nNama: ${this.nama.value}\nEmail: ${this.email.value}\nSubjek: ${this.subjek.value}\nPesan: ${this.pesan.value}`;
   
   fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(text)}`)
     .then(response => alert('Pesan terkirim!'))
